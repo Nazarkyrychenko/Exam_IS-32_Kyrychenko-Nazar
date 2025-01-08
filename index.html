@@ -6,24 +6,24 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="parent">
+    <div id="parent">
       <button class="child">button 1</button>
       <button class="child">button 2</button>
       <button class="child">button 3</button>
     </div>
 
     <script>
-         	const parent = document.getElementById("parent");
+      let arr = [1, 2, 3];
 
-         	parent.addEventListener("click", function(event) {
-         		if(event.target.) {
+      console.log(arr[0]);
 
-      }
+      const parent = document.getElementById("parent");
 
-         	}
-
-
-         )
+      parent.addEventListener("click", function (event) {
+        if (event.target.classList.contains("child")) {
+          console.log(event.target.textContent);
+        }
+      });
     </script>
   </body>
 </html>
